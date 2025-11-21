@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life on Land | helpline </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="forest video.mp4" type="video/mp4">
+</video>
+
+<header>
+    <h1>Life on Land – SDG 15</h1>
+    <p>Protecting, restoring, and promoting sustainable use of terrestrial ecosystems</p>
+</header>
+
+<nav>
+    <a href="HOMEPAGE.html">Home</a>
+    <a href="About SDG-15.html">About SDG 15</a>
+    <a href="Speciespage.html">Endangered Species</a>
+    <a href="Helpline.html">Helpline</a>
+</nav>
+
+<main>
+    <h1>Report an Animal for Rescue</h1>
+    <p>If you have spotted an injured or endangered animal that needs rescue, please fill out the form below or call the emergency number provided.</p>
+
+    <h2>Emergency Contact</h2>
+    <p>For immediate assistance, please call the Wildlife SOS 24-hour helpline: <strong>[91-1234567890]</strong>.</p>
+
+    <h2>Submit Information Online</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="species">Species of Animal (if known)</label>
+            <input type="text" id="species" name="species" required>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Exact Location/Address</label>
+            <textarea id="location" name="location" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="condition">Animal's Condition</label>
+            <select id="condition" name="condition">
+                <option value="injured">Injured</option>
+                <option value="stuck">Stuck/Trapped</option>
+                <option value="sick">Sick/Unwell</option>
+                <option value="other">Other (Describe in details)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="details">Additional Details (behavior, situation, etc.)</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Your Contact Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <button type="submit">Submit Report</button>
+    </form>
+</main>
+
+<footer>
+    Let's protect our animals! We can all help by not buying things made from animals and telling others to care!
+</footer>
+
+<!--  Simple JavaScript Alert -->
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Your report has been submitted successfully! 🚑🐾\nRescue team will reach out soon.");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life on Land | species </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="forest video.mp4" type="video/mp4">
+</video>
+
+    <header>
+    <h1>Life on Land – SDG 1</h1>
+    <p>Protecting, restoring, and promoting sustainable use of terrestrial ecosystems</p>
+</header>
+
+<nav>
+    <a href="HOMEPAGE.html">Home</a>
+    <a href="About SDG-15.html">About SDG 15</a>
+    <a href="Speciespage.html">Endangered Species</a>
+    <a href="Helpline.html">Helpline</a>
+</nav>
+
+<div class="container">
+
+    <h2>Species List & Locations</h2>
+
+    <div class="species-grid">
+
+        <div class="species-card">
+            <h3>🐅 Bengal Tiger</h3>
+            <p>Sundarbans, Assam, MP, Uttarakhand</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🦁 Asiatic Lion</h3>
+            <p>Gir Forest, Gujarat</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🐦 Great Indian Bustard</h3>
+            <p>Rajasthan, Gujarat</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🦏 One-Horned Rhinoceros</h3>
+            <p>Kaziranga, Assam</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🐘 Asian Elephant</h3>
+            <p>Assam, Kerala, Karnataka, Odisha</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🦌 Kashmir Stag (Hangul)</h3>
+            <p>Dachigam, J&K</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🐆 Snow Leopard</h3>
+            <p>Ladakh, HP, Uttarakhand</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🐐 Nilgiri Tahr</h3>
+            <p>Western Ghats</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🐬 Ganges River Dolphin</h3>
+            <p>Ganga & Brahmaputra</p>
+        </div>
+
+        <div class="species-card">
+            <h3>🐼 Red Panda</h3>
+            <p>Sikkim, Arunachal Pradesh</p>
+        </div>
+
+    </div>
+
+    <h2>Endangered Species Map</h2>
+
+    <div class="map-box">
+        <div class="map-wrapper">
+            <img id="indiaMap" src="end.jpg" alt="India Map">
+        </div>
+
+        <div class="zoom-controls">
+            <button class="zoom-btn" onclick="zoomIn()">➕ Zoom In</button>
+            <button class="zoom-btn" onclick="zoomOut()">➖ Zoom Out</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    let scale = 1;
+    const img = document.getElementById("indiaMap");
+
+    function zoomIn() {
+        scale = Math.min(scale + 0.2, 3);
+        img.style.transform = `scale(${scale})`;
+    }
+
+    function zoomOut() {
+        scale = Math.max(scale - 0.2, 0.4);
+        img.style.transform = `scale(${scale})`;
+    }
+</script>
+
+</body>
+</html>
